@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OneFamily"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.475">
+    <properties></properties>
+
+
+
+            <testcase
+                name="verifyEmployeeById"
+                time="1.343"
+                classname="org.onefamily.AppTest">
+            </testcase>
+            <testcase
+                name="verifyEmployeeById"
+                time="2.132"
+                classname="org.onefamily.AppTest">
+            </testcase>
+</testsuite>

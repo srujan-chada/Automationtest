@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [One Family Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Employees test suite(failed)" verbose="0">
+    <classes>
+      <class name="org.onefamily.AppTest">
+        <methods>
+          <include name="verifyEmployees"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- org.onefamily.AppTest -->
+    </classes>
+  </test> <!-- Employees test suite(failed) -->
+  <test thread-count="5" name="Holiday Booking Tests(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="org.onefamily.MailTravelTests">
+        <methods>
+          <include name="init"/>
+          <include name="verifyHolidayBooking" invocation-numbers="0"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- org.onefamily.MailTravelTests -->
+    </classes>
+  </test> <!-- Holiday Booking Tests(failed) -->
+</suite> <!-- Failed suite [One Family Test Suite] -->

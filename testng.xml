@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="One Family Test Suite">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+    </listeners>
+    <test name="Employees test suite">
+        <classes>
+            <class name="org.onefamily.AppTest"/>
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="Holiday Booking Tests">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="org.onefamily.MailTravelTests">
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
